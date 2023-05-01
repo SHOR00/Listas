@@ -1,18 +1,22 @@
 {
   "name": "react-javascript",
+  "homepage": "https://shor00.github.io/Listas",
   "version": "1.0.0",
   "type": "module",
   "description": "React TypeScript on Replit, using Vite bundler",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.2.3",
+    "gh-pages": "^5.0.0",
     "react-bootstrap": "^2.7.4"
   },
   "devDependencies": {
