@@ -1,7 +1,7 @@
 import ListGroup from 'react-bootstrap/ListGroup';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {useRef, useState} from 'react'
-
+import './App.css'
 function AgregarTarea() {
   
   const [tarea, setTarea] = useState("");
@@ -22,15 +22,16 @@ function AgregarTarea() {
   
   return (
     <>
+    <div className='entradas'>
       <input ref={input}></input>
       
       <button onClick={f}>agregar</button>
-    
+    </div>
       <ListGroup ref={lista}
         style={{
           color:'white', 
           background:'black'}}
-        onClick={(e)=>{e.target.remove(e.target)
+        onDoubleClick={(e)=>{e.target.remove(e.target)
                       setTarea(lista.current.innerHTML)}}
         ></ListGroup>
     </>

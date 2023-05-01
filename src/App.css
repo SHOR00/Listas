@@ -1,5 +1,23 @@
-main {
-  text-align: center;
-  vertical-align: center;
-  line-height: 100vh
+body{
+  background: grey;
+}
+.entradas {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+.entradas input, .entradas button{
+  border-radius: .5rem;
+  padding: .5rem;
+}
+
+
+.list-group{
+  border-radius: 0;
+  font-size: 1.5rem;
+}
+
+.list-group li{
+  border-bottom: .1rem solid white;
 }
